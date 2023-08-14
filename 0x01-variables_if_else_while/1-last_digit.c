@@ -1,30 +1,30 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
  * main - Entry point
- * Description: 'get the last digit of a particular number'
- * Return: always 0
+ * Description: checks on the last digit of the assigned var
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	int n;
-	int ld;
+	int n, m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	ld = n % 10;
-	if (ld > 5)
+	m = n % 10;
+	if (m > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, ld);
+		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	}
-	else if (ld < 6 && ld != 0)
+	else if (m < 6 && m != 0)
 	{
-		printf("last digit of %d  is %d and is less than 6 and not 0\n", n, ld);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
 	}
 	else
 	{
-		printf("last digit of %d is %d and is 0\n", n, ld);
+		printf("Last digit of %d is %d and is 0\n", n, m);
 	}
 	return (0);
 }
