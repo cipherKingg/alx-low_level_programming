@@ -18,7 +18,7 @@ void puts2(char *str)
 		lngi++;
 	}
 	x = lngi - 1;
-	for (i = 0 ; i <= x ; o++)
+	for (i = 0 ; i <= x ; i++)
 	{
 		if (i % 2 == 0)
 	{
