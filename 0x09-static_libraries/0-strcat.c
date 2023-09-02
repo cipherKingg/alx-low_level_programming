@@ -4,13 +4,12 @@
  * @dest: input value
  * @src: input value
  *
- * Return: void	
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {
 	int x;
 	int y;
-
 
 	x = 0;
 	while (dest[x] != '\0')
@@ -23,7 +22,7 @@ char *_strcat(char *dest, char *src)
 		dest[x] = src[y];
 		x++;
 		y++;
-	}		
+	}
 
 
 	dest[x] = '\0';
